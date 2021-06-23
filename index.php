@@ -1,4 +1,5 @@
 <?php
+#include the helper file, which init the sql connection
 include 'tools/helper.php';
 
 #fetch inhalt1 from SQL

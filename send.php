@@ -1,4 +1,5 @@
 <?php
+#include the helper file, which init the sql connection
 include 'tools/helper.php';
 
 //Sending form data to sql db.
