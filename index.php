@@ -1,5 +1,5 @@
 <?php
-include 'helper.php';
+include 'tools/helper.php';
 
 #fetch inhalt1 from SQL
 $sql = "SELECT * FROM content where `id` = '1';";
