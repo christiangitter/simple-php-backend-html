@@ -23,8 +23,9 @@
 <div class="modules">
 <div class ="container">
 <form action="send.php" method="post">
-<textarea rows="15" cols="80" name="inhalt1" id="inhalt1" placeholder="Let's put some text to the index.php"></textarea><br><br>
-<input type="submit" class="btn_submit" value="Set the Text">
+<textarea rows="2" cols="80" name="headline" id="headline" placeholder="Let's put a Headline to the index.php"></textarea><br><br>
+<textarea rows="20" cols="80" name="content" id="content" placeholder="Let's put content to the index.php"></textarea><br><br>
+<input type="submit" class="btn_submit" value="Set the Headline">
 </form>
 </div>
 </div>

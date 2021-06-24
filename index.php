@@ -2,11 +2,18 @@
 #include the helper file, which init the sql connection
 include 'tools/helper.php';
 
-#fetch inhalt1 from SQL
+#fetch Headline from SQL
 $sql = "SELECT * FROM content where `id` = '1';";
 $result = $conn->query($sql);
 $row = $result->fetch_assoc();
-$inhalt1 = $row[inhalt];
+$headline = $row[inhalt];
+$conn->close;
+
+#fetch content-line from SQL
+$sql = "SELECT * FROM content where `id` = '2';";
+$result = $conn->query($sql);
+$row = $result->fetch_assoc();
+$inhalt2 = $row[inhalt];
 $conn->close;
 
 ?>
@@ -26,8 +33,8 @@ $conn->close;
 <body>
 <div class="wrapper">
 <div class="content">
-<h1>Time for some Content!</h1>
-<p><?php echo $inhalt1; ?></p>
+<h1><?php echo $headline; ?></h1>
+<p><?php echo $inhalt2; ?></p>
 </div>
 </div>
     

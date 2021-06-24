@@ -2,10 +2,23 @@
 #include the helper file, which init the sql connection
 include 'tools/helper.php';
 
-//Sending form data to sql db.
-$sql = "Update `content` SET `inhalt` = '$inhalt1' WHERE `id` = '1';";
-$conn->query($sql);
-$conn->close;
+$headline = $_POST['headline'];
+$content = $_POST['content'];
 
+//Sending form data to sql db.
+if ($headline != ""){
+    $sql = "Update `content` SET `inhalt` = '$headline' WHERE `id` = '1';";
+    $conn->query($sql);
+    $conn->close; 
+    
+}
+
+
+if ($content != ""){
+    $sql = "Update `content` SET `inhalt` = '$content' WHERE `id` = '2';";
+    $conn->query($sql);
+    $conn->close;
+   
+}
 echo "Inhalt gesendet!";
 ?>
