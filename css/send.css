@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  background-color: lightgreen;
+  height: 100px;
+  align-items: center;
+  border: 1px solid green;
+  color: rgb(0, 85, 0);
+}
+
+.container h1 {
+  margin-left: 30px;
+  margin-bottom: 18px;
+  margin-top: 10px;
+}
+
+.container a {
+  margin-left: 30px;
+}
