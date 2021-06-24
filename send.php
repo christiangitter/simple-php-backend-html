@@ -12,7 +12,6 @@ if ($headline != ""){
     $conn->close;  
 }
 
-
 if ($content != ""){
     $sql = "Update `content` SET `inhalt` = '$content' WHERE `id` = '2';";
     $conn->query($sql);
