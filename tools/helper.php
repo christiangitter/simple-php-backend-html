@@ -1,14 +1,14 @@
 <?php
 
 #SQL-Server-Connection
-$user = 'root';
-$password = 'root';
-$db = 'zegi';
-$host = 'localhost';
-$port = 8889;
+$user = DBUSER;
+$password = DBPASSWORD;
+$db = DB;
+$host = HOST;
+$port = PORT;
 $inhalt1 = $_POST[inhalt1];
 
-//Connecting to sql db.
+//Connecting to mysql db. 
 $conn = new mysqli($host, $user, $password, $db);
 if($conn->connection_error){
     die('Verbindung zum Server fehlgeschlagen');
